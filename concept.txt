@@ -1,0 +1,14 @@
+> python compiler produces byte code which is run by PVM (Python virtual machine).
+> Byte code's each instruction size is 1 Byte so,  it called byte code.
+> python-code -> Byte-code -> machine-code -> output
+             compiler     PVM
+
+> There is inbuilt JIT (just in time) compiler with PVM which makes execution fast.
+
+> suppose there is puthon code file named "abc.py".
+  python -m dis abc.py  // it displays the byte code in readable format
+  python -m py_compile abc.py   // it will create abc.pyc (compiled byte code in binary format)
+
+  Note: "python abc.py" and "python abc.pyc" will display the same result.
+
+> python list and other cpllections stores address of the object that's why a list can stores any data type objects together.

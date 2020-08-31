@@ -1,0 +1,146 @@
+Qn: How Python is interpretted?
+
+Python language is an interpreted language. Python program runs directly from the source code. It converts the source code that is written by the programmer into an intermediate language, which is again translated into machine language that has to be executed
+
+=====================================================================
+
+Qn: How memory is managed in python?
+
+Python memory is managed by Python private heap space. All Python objects and data structures are located in a private heap. The programmer does not have an access to this private heap and interpreter takes care of this Python private heap.
+The allocation of Python heap space for Python objects is done by Python memory manager. The core API gives access to some tools for the programmer to code.
+Python also have an inbuilt garbage collector, which recycle all the unused memory and frees the memory and makes it available to the heap space.
+
+=======================================================================
+
+Qn: What is difference between list and tupple?
+
+The difference between list and tuple is that list is mutable while tuple is not. Tuple can be hashed for e.g as a key for dictionaries.
+
+======================================================================
+
+Qn: How arguments are passed? passed by value or reference?
+
+Everything in Python is an object and all variables hold references to the objects. The references values are according to the functions; as a result you cannot change the value of the references. However, you can change the objects if it is mutable
+
+======================================================================
+
+Qn: What are buil-in types provided by python
+
+There are mutable and Immutable types of Pythons built in types Mutable built-in types
+
+List
+Sets
+Dictionaries
+
+Immutable built-in types
+
+Strings
+Tuples
+Numbers
+
+=========================================================================
+
+Qn: What is namespace in python?
+
+In Python, every name introduced has a place where it lives and can be hooked for. This is known as namespace. It is like a box where a variable name is mapped to the object placed. Whenever the variable is searched out, this box will be searched, to get corresponding object.
+==========================================================================
+
+Qn: What is lambda in Python?
+
+It is a single expression anonymous function often used as inline function.
+
+=========================================================================
+
+Qn: Why lambda forms in python does not have statements?
+
+A lambda form in python does not have statements as it is used to make new function object and then return them at runtime.
+
+========================================================================
+
+Qn: What is pass in Python?
+
+Pass means, no-operation Python statement, or in other words it is a place holder in compound statement, where there should be a blank left and nothing has to be written there.
+
+=========================================================================
+
+Qn :What are iterators?
+
+In Python, iterators are used to iterate a group of elements, containers like list.
+
+======================================================================
+
+Qn: What is slicing?
+
+A mechanism to select a range of items from sequence types like list, tuple, strings etc. is known as slicing
+
+=====================================================================
+
+Qn: What is generators?
+
+The way of implementing iterators are known as generators. It is a normal function except that it yields expression in the function.
+
+===================================================================
+
+Qn: How can you copy an object in python?
+
+To copy an object in Python, you can try copy.copy () or copy.deepcopy() for the general case. You cannot copy all objects but most of them.
+
+======================================================================
+
+Qn: What is negative index?
+
+Python sequences can be index in positive and negative numbers. For positive index, 0 is the first index, 1 is the second index and so forth. For negative index, (-1) is the last index and (-2) is the second last index and so forth.
+
+==================================================================
+
+Qn: how to convert a number in string?
+
+In order to convert a number into a string, use the inbuilt function str(). If you want a octal or hexadecimal representation, use the inbuilt function oct() or hex().
+====================================================================
+
+Qn: What is difference between xrange and range?
+
+Xrange returns the xrange object while range returns the list, and uses the same memory and no matter what the range size is.
+
+==================================================================
+
+Qn: What is module and package in Python?
+
+In Python, module is the way to structure program. Each Python program file is a module, which imports other modules like objects and attributes.
+
+The folder of Python program is a package of modules. A package can have modules or subfolders.
+
+======================================================================
+
+Qn: Mention what are the rules for local and global variables in Python?
+
+Local variables: If a variable is assigned a new value anywhere within the function's body, it's assumed to be local.
+
+Global variables: Those variables that are only referenced inside a function are implicitly global.
+
+======================================================================
+
+Qn: How can you share global variables across modules?
+
+To share global variables across modules within a single program, create a special module. Import the config module in all modules of your application. The module will be available as a global variable across modules.
+
+=================================================================
+
+Qn: Explain how can you make a Python Script executable on Unix?
+
+To make a Python Script executable on Unix, you need to do two things,
+
+Script file's mode must be executable and
+the first line must begin with # ( #!/usr/local/bin/python)
+
+====================================================================
+
+Qn: Explain how to delete a file in Python?
+
+By using a command os.remove (filename) or os.unlink(filename)
+
+==================================================================
+
+Qn: Mention the use of // operator in Python?
+
+It is a Floor Divisionoperator , which is used for dividing two operands with the result as quotient showing only digits before the decimal point. For instance, 10//5 = 2 and 10.0//5.0 = 2.0.
